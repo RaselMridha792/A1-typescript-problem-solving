@@ -19,7 +19,14 @@ function checkType(value: StringOrNumber): string {
   return "Number";
 }
 
-// Problem 4
+// Problem 4 solution
 function getProperty<T, K extends keyof T>(obj: T, key: K): T[K] {
   return obj[key];
+}
+
+// Problem 5 solution
+interface Book {
+  title: string;
+  author: string;
+  publishedYear: number;
 }
